@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #c29b9e;
+}
+#container{
+  width: 960px;
+  height: 855px;
+  border: 1px solid black;
+  position: relative;
+  margin: 10px auto;
+  border-radius: 5px;
+  background-color: #8a6d6f;
+}
+.card{
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  border-radius: 5px;
+  perspective: 600px;
+}
+.face{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 5px;
+  transition: all 1s;
+  backface-visibility: hidden;
+}
+.back{
+  background: url("https://www.mediafire.com/convkey/91d9/7pm96zcgof8wb9w7g.jpg?size_id=3")
+}
+.back.flipped{
+  transform: rotateY(180deg);
+}
+.front{
+  background: url("https://www.mediafire.com/convkey/5d3e/6nt18134v5ilpr37g.jpg?size_id=3");
+  transform: rotateY(-180deg);
+}
+.front.flipped{
+  transform: rotateY(0deg);
+}
+
+.card:hover{
+  box-shadow: 0 0 15px white;
+}
