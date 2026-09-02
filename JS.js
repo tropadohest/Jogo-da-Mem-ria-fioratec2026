@@ -14,6 +14,5 @@
     var faces = this.getElementsByClassName("face");
     faces[0].classList.toggle("flipped");
     faces[1].classList.toggle("flipped");
-    console.log(faces[0].classList);
   }
 }())
