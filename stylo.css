@@ -30,7 +30,7 @@ body{
   backface-visibility: hidden;
 }
 .back{
-  background: url("https://www.mediafire.com/convkey/91d9/7pm96zcgof8wb9w7g.jpg?size_id=3")
+  background: url("../main/0.png")
 }
 .back.flipped{
   transform: rotateY(180deg);
