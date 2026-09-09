@@ -30,7 +30,7 @@ body{
   backface-visibility: hidden;
 }
 .back{
-  background: url("../images/0.png")
+  background: url("../images/0.png");
 }
 .back.flipped{
   transform: rotateY(180deg);
