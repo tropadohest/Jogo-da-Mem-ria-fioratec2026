@@ -36,7 +36,7 @@ body{
   transform: rotateY(180deg);
 }
 .front{
-  background: url("https://www.mediafire.com/convkey/5d3e/6nt18134v5ilpr37g.jpg?size_id=3");
+  background: url('https://www.mediafire.com/convkey/5d3e/6nt18134v5ilpr37g.jpg?size_id=3');
   transform: rotateY(-180deg);
 }
 .front.flipped{
