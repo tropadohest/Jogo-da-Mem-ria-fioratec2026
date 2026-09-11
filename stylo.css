@@ -30,7 +30,7 @@ body{
   backface-visibility: hidden;
 }
 .back{
-  background: url("https://tropadohest.github.io/Jogo-da-Mem-ria-fioratec2026/0.png");
+  background: url('images/0.png');
 }
 .back.flipped{
   transform: rotateY(180deg);
