@@ -2,8 +2,8 @@
   var image = [];
    for(i = 0; i < 20; i++){
      var img = {
-         src: "images/" + ".jpg",
-         id: i%5
+         src: "images/"+ i +".jpg",
+         id: i%1
      };
      image.push(img)
    }
