@@ -3,7 +3,7 @@
    for(i = 0; i < 20; i++){
      var img = {
          src: "images/" + ".jpg",
-         id: i%1
+         id: i%5
      };
      image.push(img)
    }
@@ -19,7 +19,7 @@
 
       card.addEventListener("click",flipCard,false);
 
-      frontFaces[i].style.background = "url('"+ image[i].src +"')"
+      frontFaces[i].style.background = "url('"+ image[i].src +"')";
     }
   }
 
