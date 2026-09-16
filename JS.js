@@ -1,4 +1,14 @@
 (function(){
+  var image = [];
+   for(i = 0; i < 20; i++){
+     var img = {
+         src: "images/" + ".jpg",
+         id: i % 5
+     };
+     image.push(img)
+   }
+  console.log(image)
+  
   startGame();
   function startGame(){
     for(var i = 0; i < 20; i++){
