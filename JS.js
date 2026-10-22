@@ -11,7 +11,7 @@
   
   startGame();
   function startGame(){
-    image = randomSort(image);
+    img = randomSort(img);
    var frontFaces = document.getElementsByClassName("front");
     for(var i = 0; i < 20; i++){
       var card = document.querySelector("#card" + i)
@@ -27,9 +27,6 @@
   }
 
   function randomSort(oldArray){
-    //var arrTest = ["banana","morango","maça"];
-    //console.log(arrTest.IndexOf(2));
-
     var newArray = [];
     while(newArray.lenght !== oldArray.lenght){
       var i = Math.floor(Math.random()*oldArray.lenght)
