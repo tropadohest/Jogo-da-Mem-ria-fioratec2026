@@ -11,6 +11,7 @@
   
   startGame();
   function startGame(){
+    image = randomSort(image);
    var frontFaces = document.getElementsByClassName("front");
     for(var i = 0; i < 20; i++){
       var card = document.querySelector("#card" + i)
@@ -24,6 +25,20 @@
       console.log(frontFaces.id);
     }
   }
+
+  function randomSort(oldArray){
+    //var arrTest = ["banana","morango","maça"];
+    //console.log(arrTest.IndexOf(2));
+
+    var newArray = [];
+    while(newArray.lenght !== oldArray.lenght){
+      var i = Math.floor(Math.random()*oldArray.lenght)
+      if(newArray.indexOf(oldArray[i] < 0)){
+        newArray.push(oldArray[i]);
+      }
+    }
+    return newArray;
+  };
 
   function flipCard(){
     var faces = this.getElementsByClassName("face");
