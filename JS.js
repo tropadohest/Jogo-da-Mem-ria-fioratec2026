@@ -15,7 +15,7 @@
    var frontFaces = document.getElementsByClassName("front");
     for(var i = 0; i < 20; i++){
       var card = document.querySelector("#card" + i)
-      card.style.left = i % 5 === 0 ? 15 + "px" : i % 10 * 165 + 5 + "px";
+      card.style.left = i % 5 === 0 ? 15 + "px" : i % 5 * 165 + 5 + "px";
       card.style.top = Math.floor (i / 5) * 215 + "px";
 
       card.addEventListener("click",flipCard,false);
