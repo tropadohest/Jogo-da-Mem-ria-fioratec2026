@@ -15,8 +15,8 @@ body{
   background-color: #8a6d6f;
 }
 .card{
-  width: 250px;
-  height: 300px;
+  width: 240px;
+  height: 360px;
   position: absolute;
   border-radius: 5px;
   perspective: 600px;
