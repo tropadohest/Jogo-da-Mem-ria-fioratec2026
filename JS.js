@@ -28,8 +28,8 @@
 
   function randomSort(oldArray){
     var newArray = [];
-    while(newArray.length != oldArray.lenght){
-      var i = Math.floor(Math.random()*oldArray.lenght);
+    while(newArray.length != oldArray.length){
+      var i = Math.floor(Math.random()*oldArray.length);
       if(newArray.indexOf(oldArray[i]) < 0){
         newArray.push(oldArray[i]);
       }
