@@ -6,7 +6,7 @@ body{
   background-color: #c29b9e;
 }
 #container{
-  width: 1660px;
+  width: 960px;
   height: 855px;
   border: 1px solid black;
   position: relative;
@@ -15,8 +15,8 @@ body{
   background-color: #8a6d6f;
 }
 .card{
-  width: 240px;
-  height: 360px;
+  width: 150px;
+  height: 200px;
   position: absolute;
   border-radius: 5px;
   perspective: 600px;
