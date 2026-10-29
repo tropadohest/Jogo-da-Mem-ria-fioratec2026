@@ -46,7 +46,7 @@
     if(flippedCards.length < 2){
       var faces = this.getElementsByClassName("face");
       
-      if(faces[0].classList.lenght > 2){
+      if(faces[0].classList.length > 2){
         return;
       };
       
