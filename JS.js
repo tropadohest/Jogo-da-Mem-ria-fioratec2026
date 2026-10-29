@@ -73,6 +73,8 @@
   })
   
   function GameOver(){
+    modalGameOver.syle.width = 100vw;
+    modalGameOver.style.height = 100vh;
     modalGameOver.style.zIndex = 67
     modalGameOver.addEventListener('click',startGame,false)
   }
