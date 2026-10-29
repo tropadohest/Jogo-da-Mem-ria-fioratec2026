@@ -9,6 +9,11 @@ body{
   width: 100vw;
   height: 100vh;
 }
+#modalGameOver{
+  position: absolute;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+}
 #container{
   width: 820px;
   height: 855px;
