@@ -5,6 +5,10 @@
 body{
   background-color: #c29b9e;
 }
+#ImgGameOver{
+  width: 100vw;
+  height: 100vh;
+}
 #container{
   width: 820px;
   height: 855px;
