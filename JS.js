@@ -3,6 +3,7 @@
 
   var flippedCards = [];
 
+  var modalGameOver = document.querySelector("#ModalGameOver");
   
    for(i = 0; i < 20; i++){
      var img = {
@@ -60,5 +61,13 @@
         flippedCards[1].childNodes[3].classList.toggle("flipped");
       flippedCards = [];
     }
+  }
+
+  window.setTimeout(() => {
+    gameOver();
+  },1000)
+  
+  function GameOver(){
+    modalGameOver.style.zIndex = 67
   }
 }())
