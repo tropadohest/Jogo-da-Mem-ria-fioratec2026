@@ -63,9 +63,9 @@
     }
   }
 
-  window.setTimeout(() => {
-    gameOver();
-  },1000)
+  window.setTimeout(function(){
+    GameOver();
+  })
   
   function GameOver(){
     modalGameOver.style.zIndex = 67
