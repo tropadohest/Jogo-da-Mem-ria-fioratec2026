@@ -30,7 +30,7 @@
       frontFaces[1].setAttribute("id",image[i].id);
       console.log(frontFaces.id);
     }
-    body.style.backgroundColor = #8a6d6f;
+    document.querySelector('body').style.backgroundColor = #8a6d6f;
     modalGameOver.style.zIndex = -5
     modalGameOver.style.width = 0px;
     modalGameOver.style.height = 0px;
