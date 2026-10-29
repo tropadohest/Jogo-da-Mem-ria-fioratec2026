@@ -32,7 +32,7 @@
     }
     body.style.backgroundColor = #8a6d6f;
     modalGameOver.style.zIndex = -5
-    modalGameOver.syle.width = 0px;
+    modalGameOver.style.width = 0px;
     modalGameOver.style.height = 0px;
     modalGameOver.removeEventListener('click',startGame,false);
   }
@@ -73,7 +73,7 @@
   })
   
   function GameOver(){
-    modalGameOver.syle.width = 100vw;
+    modalGameOver.style.width = 100vw;
     modalGameOver.style.height = 100vh;
     modalGameOver.style.zIndex = 67
     modalGameOver.addEventListener('click',startGame,false)
