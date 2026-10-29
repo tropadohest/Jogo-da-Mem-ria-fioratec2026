@@ -3,7 +3,7 @@
 
   var flippedCards = [];
 
-  var modalGameOver = document.querySelector("#ModalGameOver");
+  var modalGameOver = document.querySelector("#modalGameOver");
   
    for(i = 0; i < 20; i++){
      var img = {
