@@ -30,6 +30,8 @@
       frontFaces[1].setAttribute("id",image[i].id);
       console.log(frontFaces.id);
     }
+    modalGameOver.style.zIndex = -5
+    modalGameOver.removeEventListener('click',startGame,false);
   }
 
   function randomSort(oldArray){
@@ -69,5 +71,6 @@
   
   function GameOver(){
     modalGameOver.style.zIndex = 67
+    modalGameOver.addEventListener('click',startGame,false)
   }
 }())
