@@ -1,5 +1,9 @@
 (function(){
   var image = [];
+
+  var flippedCards = [];
+
+  
    for(i = 0; i < 20; i++){
      var img = {
          src: "images/"+ i +".jpg",
@@ -11,6 +15,7 @@
   
   startGame();
   function startGame(){
+    flippedCards = [];
     image = randomSort(image);
    var frontFaces = document.getElementsByClassName("front");
     for(var i = 0; i < 20; i++){
@@ -38,8 +43,22 @@
   };
 
   function flipCard(){
-    var faces = this.getElementsByClassName("face");
-    faces[0].classList.toggle("flipped");
-    faces[1].classList.toggle("flipped");
+    if(flippedCards.length < 2){
+      var faces = this.getElementsByClassName("face");
+      
+      if(faces[0].classList.lenght > 2){
+        return;
+      };
+      
+      faces[0].classList.toggle("flipped");
+      faces[1].classList.toggle("flipped");
+      flippedCards.push(this);
+      } else {
+        flippedCards[0].childNodes[1].classList.toggle("flipped");
+        flippedCards[0].childNodes[3].classList.toggle("flipped");
+        flippedCards[1].childNodes[1].classList.toggle("flipped");
+        flippedCards[1].childNodes[3].classList.toggle("flipped");
+      flippedCards = [];
+    }
   }
 }())
