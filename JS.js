@@ -62,7 +62,7 @@
       faces[1].classList.toggle("flipped");
       
       flippedCards.push(this);
-      if(flippedCards.lenght === 2){
+      if(flippedCards.length === 2){
         if(flippedCards[0].childNodes[3].id === flippedCards[1].childNodes[3].id){
           alert();
         }
