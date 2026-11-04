@@ -29,7 +29,7 @@
       card.addEventListener("click",flipCard,false);
 
       frontFaces[i].style.background = "url('"+ image[i].src +"')";
-      frontFaces[1].setAttribute("id",image[i].id);
+      frontFaces[i].setAttribute("id",image[i].id);
       console.log(frontFaces.id);
     }
     document.querySelector('body').style.backgroundColor = rgb(194,155,158);
@@ -62,6 +62,7 @@
       faces[1].classList.toggle("flipped");
       
       flippedCards.push(this);
+      
       if(flippedCards.length === 2){
         if(flippedCards[0].childNodes[3].id === flippedCards[1].childNodes[3].id){
           alert();
