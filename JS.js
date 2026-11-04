@@ -32,8 +32,8 @@
     }
     document.querySelector('body').style.backgroundColor = rgba(194,155,158,1);
     modalGameOver.style.zIndex = -5
-    modalGameOver.style.width = 0px;
-    modalGameOver.style.height = 0px;
+    modalGameOver.style.width = 0 + "px";
+    modalGameOver.style.height = 0 + "px";
     modalGameOver.removeEventListener('click',startGame,false);
   }
 
@@ -73,8 +73,8 @@
   })
   
   function GameOver(){
-    modalGameOver.style.width = 100vw;
-    modalGameOver.style.height = 100vh;
+    modalGameOver.style.width = 100 + "vw";
+    modalGameOver.style.height = 100 + "vh";
     modalGameOver.style.zIndex = 67
     modalGameOver.addEventListener('click',startGame,false)
   }
