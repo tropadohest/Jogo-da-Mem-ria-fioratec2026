@@ -63,6 +63,7 @@
       
       flippedCards.push(this);
       
+      
       if(flippedCards.length === 2){
         if(flippedCards[0].childNodes[3].id === flippedCards[1].childNodes[3].id){
           alert();
@@ -74,6 +75,7 @@
         flippedCards[0].childNodes[3].classList.toggle("flipped");
         flippedCards[1].childNodes[1].classList.toggle("flipped");
         flippedCards[1].childNodes[3].classList.toggle("flipped");
+        console.log(flippedCards);
       flippedCards = [];
     }
   }
