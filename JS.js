@@ -28,7 +28,7 @@
 
       card.addEventListener("click",flipCard,false);
 
-      frontFaces[i].style.background = "url('"+ image[i].src +"')";
+      frontFaces[1].style.background = "url('"+ image[i].src +"')";
       frontFaces[i].setAttribute("id",image[i].id);
       console.log(frontFaces.id);
     }
