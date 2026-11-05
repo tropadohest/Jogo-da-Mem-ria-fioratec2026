@@ -10,7 +10,7 @@
    for(i = 0; i < 20; i++){
      var img = {
          src: "images/"+ i +".jpg",
-         id: i%20
+         id: i%5
      };
      image.push(img)
    }
@@ -29,7 +29,7 @@
       card.addEventListener("click",flipCard,false);
 
       frontFaces[i].style.background = "url('"+ image[i].src +"')";
-      frontFaces[1].setAttribute("id",image[i].id);
+      frontFaces[i].setAttribute("id",image[i].id);
       console.log(frontFaces.id);
     }
     document.querySelector('body').style.backgroundColor = "rgb(194,155,158)";
