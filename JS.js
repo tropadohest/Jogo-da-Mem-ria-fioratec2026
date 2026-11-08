@@ -22,6 +22,7 @@
   function startGame(){
     flippedCards = [];
     image = randomSort(image);
+    randomSort.setAttribute("id", "randomSortId");
    var frontFaces = document.getElementsByClassName("front");
     for(var i = 0; i < 20; i++){
       var card = document.querySelector("#card" + i)
