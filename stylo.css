@@ -52,7 +52,7 @@ body{
   backface-visibility: hidden;
 }
 .face.flipped.match{
-  box-shadow: 0 0 15px #ff0
+  box-shadow: 0 0 15px #FFC928
 }
 .back{
   background: url('images/verso.jpg');
