@@ -92,7 +92,7 @@
     }
   }
   
-  function GameOver(){
+  function gameOver(){
     modalGameOver.style.width = 100 + "vw";
     modalGameOver.style.height = 100 + "vh";
     modalGameOver.style.zIndex = 67
