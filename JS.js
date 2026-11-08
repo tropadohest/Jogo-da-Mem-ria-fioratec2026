@@ -75,6 +75,7 @@
          matches++;
          flippedCards = [];
          if(matches === 10){
+           console.log("GameOverFunc Foi em, se n foi foi em outro lugar jj pegkmae´lgjm")
            gameOver();
          }
         }
