@@ -5,6 +5,8 @@
 
   var flippedCards = [];
 
+  var imgMatchSign = document.querySelector('#imgMatchSign');
+
   var modalGameOver = document.querySelector("#modalGameOver");
   
    for(var i = 0; i < 20; i++){
@@ -66,7 +68,16 @@
       
       if(flippedCards.length === 2){
         if(flippedCards[0].childNodes[3].id === flippedCards[1].childNodes[3].id){
-          alert();
+         flippedCards[0].childNodes[1].classList.toggle("match");
+         flippedCards[0].childNodes[3].classList.toggle("match");
+         flippedCards[1].childNodes[1].classList.toggle("match");
+         flippedCards[1].childNodes[3].classList.toggle("match");
+         matchCardSign();
+         matches++;
+         flippedCards = [];
+         if(matches === 10){
+           gameOver();
+         }
         }
       }
       
@@ -85,5 +96,15 @@
     modalGameOver.style.height = 100 + "vh";
     modalGameOver.style.zIndex = 67
     modalGameOver.addEventListener('click',startGame,false)
+  }
+  function matchCardSign(){
+    imgMatchSign.style.zIndex = 1;
+    imgMatchSign.style.top = 150 + "px";
+    imgMatchSign.style.opacity = 0;
+  setTimeout(function(){
+     imgMatchSign.style.zIndex = -1;
+     imgMatchSign.style.top = 250 + "px";
+     imgMatchSign.style.opacity = 1;
+  },1500)
   }
 }())
