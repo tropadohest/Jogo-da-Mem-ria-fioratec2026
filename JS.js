@@ -20,11 +20,16 @@
   
   startGame();
   function startGame(){
+    matches = 0;
+    
     flippedCards = [];
     image = randomSort(image);
    var frontFaces = document.getElementsByClassName("front");
+   var backFaces = document.getElementsByClassName("back");
     for(var i = 0; i < 20; i++){
-      var card = document.querySelector("#card" + i)
+      frontFaces[i].classList.remove("flipped", "match");
+      backFaces[i].classList.remove("flipped" , "match");
+      var card = document.querySelector("#card" + i);
       card.style.left = i % 5 === 0 ? 5 + "px" : i % 5 * 165 + 5 + "px";
       card.style.top = Math.floor (i / 5) * 215 + "px";
       card.addEventListener("click",flipCard,false);
