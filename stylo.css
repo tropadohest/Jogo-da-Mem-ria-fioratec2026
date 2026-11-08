@@ -6,6 +6,16 @@ body{
   background-color: rgba(194,155,158,1);
   text-align: center;
 }
+#imgMatchSign{
+  position: relative;
+  top: 250px;
+  width: 100vw;
+  height: 100vh;
+  transition-property: top, opacity;
+  trasition-duration: 1.5s;
+  opacity: 1;
+  z-index: -6;
+}
 #ImgGameOver{
   width: 100vw;
   height: 100vh;
@@ -39,6 +49,9 @@ body{
   border-radius: 5px;
   transition: all 0.7s;
   backface-visibility: hidden;
+}
+.face.flipped.match{
+  box-shadow: 0 0 15px #ff0
 }
 .back{
   background: url('images/verso.jpg');
