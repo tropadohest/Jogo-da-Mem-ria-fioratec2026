@@ -31,6 +31,7 @@
 	  matches = 0;
 	  document.querySelector('#containerError').innerText = "A quantidade de acertos é: " + errorCounter;
 	  document.querySelector('#containerMatch').innerText = "A quantidade de acertos é: " + matches;
+      modalGameOver.style.opacity = 0;
       var card = document.querySelector("#card" + i);
       card.style.left = i % 5 === 0 ? 5 + "px" : i % 5 * 165 + 5 + "px";
       card.style.top = Math.floor (i / 5) * 215 + "px";
