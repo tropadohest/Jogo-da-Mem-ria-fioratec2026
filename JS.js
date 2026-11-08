@@ -98,11 +98,9 @@
   }
   function matchCardSign(){
     imgMatchSign.style.zIndex = 67;
-    imgMatchSign.style.top = 0 + "px";
     imgMatchSign.style.opacity = 0;
   setTimeout(function(){
      imgMatchSign.style.zIndex = -6;
-     imgMatchSign.style.top = 250 + "px";
      imgMatchSign.style.opacity = 1;
   },1500)
   }
