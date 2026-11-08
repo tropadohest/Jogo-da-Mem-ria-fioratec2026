@@ -8,7 +8,8 @@ body{
 }
 #imgMatchSign{
   position: absolute;
-  top: 250px;
+  top: 0px;
+  right: 0px;
   width: 100vw;
   height: 100vh;
   transition-property: top, opacity;
