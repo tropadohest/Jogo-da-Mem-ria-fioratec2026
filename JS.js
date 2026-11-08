@@ -1,13 +1,11 @@
 (function(){
   var matches = 0;
-  
   var image = [];
-
   var flippedCards = [];
-
   var imgMatchSign = document.querySelector("#imgMatchSign");
-
   var modalGameOver = document.querySelector("#modalGameOver");
+  var errorCounter = 0;
+  
   
    for(var i = 0; i < 20; i++){
      var img = {
@@ -84,7 +82,7 @@
            console.log("GameOverFunc Foi em, se n foi foi em outro lugar jj pegkmae´lgjm")
            gameOver();
          }
-        }
+        } 
       }
       
       } else {
@@ -100,7 +98,8 @@
   function gameOver(){
     modalGameOver.style.width = 100 + "vw";
     modalGameOver.style.height = 100 + "vh";
-    modalGameOver.style.zIndex = 67
+    modalGameOver.style.zIndex = 67;
+    modalGameOver.style.opacity = 1;
     modalGameOver.addEventListener('click',startGame,false)
   }
   function matchCardSign(){
