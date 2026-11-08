@@ -5,7 +5,7 @@
 
   var flippedCards = [];
 
-  var imgMatchSign = document.querySelector('#imgMatchSign');
+  var imgMatchSign = document.querySelector("#imgMatchSign");
 
   var modalGameOver = document.querySelector("#modalGameOver");
   
