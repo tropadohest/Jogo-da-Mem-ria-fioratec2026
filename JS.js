@@ -73,6 +73,7 @@
          flippedCards[1].childNodes[3].classList.toggle("match");
          matchCardSign();
          matches++;
+         console.log("Numero de acertos: " + matches);
          flippedCards = [];
          if(matches === 10){
            console.log("GameOverFunc Foi em, se n foi foi em outro lugar jj pegkmae´lgjm")
