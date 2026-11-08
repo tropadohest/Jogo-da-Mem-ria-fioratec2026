@@ -98,7 +98,7 @@
     modalGameOver.addEventListener('click',startGame,false)
   }
   function matchCardSign(){
-    imgMatchSign.style.zIndex = 1;
+    imgMatchSign.style.zIndex = 5;
     imgMatchSign.style.top = 150 + "px";
     imgMatchSign.style.opacity = 0;
   setTimeout(function(){
