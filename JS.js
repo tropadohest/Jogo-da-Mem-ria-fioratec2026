@@ -27,6 +27,10 @@
     for(var i = 0; i < 20; i++){
       frontFaces[i].classList.remove("flipped", "match");
       backFaces[i].classList.remove("flipped" , "match");
+	  errorCounter = 0;
+	  matches = 0;
+	  document.querySelector('#containerError').innerText = "A quantidade de acertos é: " + errorCounter;
+	  document.querySelector('#containerMatch').innerText = "A quantidade de acertos é: " + matches;
       var card = document.querySelector("#card" + i);
       card.style.left = i % 5 === 0 ? 5 + "px" : i % 5 * 165 + 5 + "px";
       card.style.top = Math.floor (i / 5) * 215 + "px";
@@ -77,11 +81,12 @@
          matchCardSign();
          matches++;
          console.log("Numero de acertos: " + matches);
+		 document.querySelector('#containerMatch').innerText = "A quantidade de acertos é: " + matches;
          flippedCards = [];
          if(matches === 10){
            console.log("GameOverFunc Foi em, se n foi foi em outro lugar jj pegkmae´lgjm")
            gameOver();
-         }
+          }
         } 
       }
       
@@ -90,7 +95,9 @@
         flippedCards[0].childNodes[3].classList.toggle("flipped");
         flippedCards[1].childNodes[1].classList.toggle("flipped");
         flippedCards[1].childNodes[3].classList.toggle("flipped");
-        console.log(flippedCards);
+        errorCounter++
+		document.querySelector('#containerError').innerText = "A quantidades de erros é: " + errorCounter;
+        console.log("A Quantidade de erros é: " + errorCounter);
       flippedCards = [];
     }
   }
