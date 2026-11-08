@@ -43,8 +43,6 @@
   function randomSort(oldArray){
     var newArray = [];
     while(newArray.length != oldArray.length){
-      newArray.push(oldArray[i]);
-      card.style.transition = "transform 0.5s ease";
       var i = Math.floor(Math.random()*oldArray.length);
       if(newArray.indexOf(oldArray[i]) < 0){
         newArray.push(oldArray[i]);
