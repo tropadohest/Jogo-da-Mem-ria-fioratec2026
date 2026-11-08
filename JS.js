@@ -22,13 +22,11 @@
   function startGame(){
     flippedCards = [];
     image = randomSort(image);
-    randomSort.setAttribute("id", "randomSortId");
    var frontFaces = document.getElementsByClassName("front");
     for(var i = 0; i < 20; i++){
       var card = document.querySelector("#card" + i)
       card.style.left = i % 5 === 0 ? 5 + "px" : i % 5 * 165 + 5 + "px";
       card.style.top = Math.floor (i / 5) * 215 + "px";
-
       card.addEventListener("click",flipCard,false);
 
       frontFaces[i].style.background = "url('"+ image[i].src +"')";
@@ -45,6 +43,8 @@
   function randomSort(oldArray){
     var newArray = [];
     while(newArray.length != oldArray.length){
+      newArray.push(oldArray[i]);
+      card.style.transition = "transform 0.5s ease";
       var i = Math.floor(Math.random()*oldArray.length);
       if(newArray.indexOf(oldArray[i]) < 0){
         newArray.push(oldArray[i]);
