@@ -10,7 +10,7 @@
    for(var i = 0; i < 20; i++){
      var img = {
          src: "images/"+ i +".jpg",
-         id: i%5
+         id: i%10
      };
      image.push(img)
    }
