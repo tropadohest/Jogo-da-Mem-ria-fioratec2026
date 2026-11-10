@@ -84,7 +84,6 @@
          matchCardSign();
          matches++;
          console.log("Numero de acertos: " + matches);
-	     document.querySelector('#containerError').innerText = "A quantidade de erros é: " + errorCounter;
 		 document.querySelector('#containerMatch').innerText = "A quantidade de acertos é: " + matches;
 		 document.querySelector('#containerProgress').style.width = matches * 10 + "%";
 		 pp1var.innerText = matches * + 10 + "%";
