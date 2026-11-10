@@ -7,7 +7,7 @@
   var errorCounter = 0;
   var pp1var = document.querySelector('#pp1');
   var rpbvar = document.querySelector('#roundedProgressBar');
-  
+  var cm1var = 0
   
    for(var i = 0; i < 20; i++){
      var img = {
@@ -34,6 +34,10 @@
 	  modalGameOver.style.opacity = 0;
 	  document.querySelector('#containerError').innerText = "A quantidade de erros é: " + errorCounter;
 	  document.querySelector('#containerMatch').innerText = "A quantidade de acertos é: " + matches;
+      document.querySelector('#containerProgress').style.width = matches * 10 + "%";
+      pp1Func();
+      pp1var.innerText = 0 + "%";
+      pp1var.style.color = "white";
       var card = document.querySelector("#card" + i);
       card.style.left = i % 5 === 0 ? 5 + "px" : i % 5 * 165 + 5 + "px";
       card.style.top = Math.floor (i / 5) * 215 + "px";
@@ -83,8 +87,9 @@
          flippedCards[1].childNodes[3].classList.toggle("match");
          matchCardSign();
          matches++;
+         cm1var++;
          console.log("Numero de acertos: " + matches);
-		 document.querySelector('#containerMatch').innerText = "A quantidade de acertos é: " + matches;
+		 document.querySelector('#containerMatch').innerText = "A quantidade de acertos é:ioejg " + cm1var;
 		 document.querySelector('#containerProgress').style.width = matches * 10 + "%";
 		 pp1var.innerText = matches * + 10 + "%";
 		 flippedCards = [];
@@ -93,18 +98,19 @@
            console.log("GameOverFunc Foi em, se n foi foi em outro lugar jj pegkmae´lgjm")
            gameOver();
           }
-        } 
+        }
       }
       
       } else {
-        flippedCards[0].childNodes[1].classList.toggle("flipped");
-        flippedCards[0].childNodes[3].classList.toggle("flipped");
-        flippedCards[1].childNodes[1].classList.toggle("flipped");
-        flippedCards[1].childNodes[3].classList.toggle("flipped");
-        errorCounter++
-		document.querySelector('#containerError').innerText = "A quantidades de erros é: " + errorCounter;
-        console.log("A Quantidade de erros é: " + errorCounter);
-      flippedCards = [];
+         autoFlip();
+         flippedCards[0].childNodes[1].classList.toggle("flipped");
+         flippedCards[0].childNodes[3].classList.toggle("flipped");
+         flippedCards[1].childNodes[1].classList.toggle("flipped");
+         flippedCards[1].childNodes[3].classList.toggle("flipped");
+         errorCounter++
+		 document.querySelector('#containerError').innerText = "A quantidades de erros é: " + errorCounter;
+         console.log("A Quantidade de erros é: " + errorCounter);
+         flippedCards = []; 
     }
   }
   
@@ -131,5 +137,8 @@
 	 } else {
 		 pp1var.style.color = "orange";
 	 }
+  }
+  function autoFlip(){
+      setTimeout(autoFlip, 1000);
   }
 }())
