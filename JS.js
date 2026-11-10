@@ -5,6 +5,8 @@
   var imgMatchSign = document.querySelector("#imgMatchSign");
   var modalGameOver = document.querySelector("#modalGameOver");
   var errorCounter = 0;
+  var pp1var = document.querySelector('#pp1');
+  var rpbvar = document.querySelector('#roundedProgressBar');
   
   
    for(var i = 0; i < 20; i++){
@@ -29,9 +31,9 @@
       backFaces[i].classList.remove("flipped" , "match");
 	  errorCounter = 0;
 	  matches = 0;
+	  modalGameOver.style.opacity = 0;
 	  document.querySelector('#containerError').innerText = "A quantidade de acertos é: " + errorCounter;
 	  document.querySelector('#containerMatch').innerText = "A quantidade de acertos é: " + matches;
-      modalGameOver.style.opacity = 0;
       var card = document.querySelector("#card" + i);
       card.style.left = i % 5 === 0 ? 5 + "px" : i % 5 * 165 + 5 + "px";
       card.style.top = Math.floor (i / 5) * 215 + "px";
@@ -83,7 +85,11 @@
          matches++;
          console.log("Numero de acertos: " + matches);
 		 document.querySelector('#containerMatch').innerText = "A quantidade de acertos é: " + matches;
-         flippedCards = [];
+		 document.querySelector('#containerProgress').style.width = matches * 10 + "%";
+		 pp1var.innerText = matches * + 10 + "%";
+		 flippedCards = [];
+		 pp1Func();
+		 rpb();
          if(matches === 10){
            console.log("GameOverFunc Foi em, se n foi foi em outro lugar jj pegkmae´lgjm")
            gameOver();
@@ -117,5 +123,17 @@
      imgMatchSign.style.zIndex = -6;
      imgMatchSign.style.opacity = 1;
   },1500)
+  }
+  function pp1Func(){
+     if(matches == 10){
+		 pp1var.style.color = "blue";
+	 } else if (matches <= 9 && matches >= 3){
+		 pp1var.style.color = "yellow";
+	 } else {
+		 pp1var.style.color = "orange";
+	 }
+  }
+  function rpb(){
+		  rpbvar.style.background = "conic-gradient(from" + matches * 10 + "deg, yellow, red)";
   }
 }())
