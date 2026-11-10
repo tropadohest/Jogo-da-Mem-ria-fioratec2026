@@ -32,7 +32,7 @@
 	  errorCounter = 0;
 	  matches = 0;
 	  modalGameOver.style.opacity = 0;
-	  document.querySelector('#containerError').innerText = "A quantidade de acertos é: " + errorCounter;
+	  document.querySelector('#containerError').innerText = "A quantidade de erros é: " + errorCounter;
 	  document.querySelector('#containerMatch').innerText = "A quantidade de acertos é: " + matches;
       var card = document.querySelector("#card" + i);
       card.style.left = i % 5 === 0 ? 5 + "px" : i % 5 * 165 + 5 + "px";
@@ -84,6 +84,7 @@
          matchCardSign();
          matches++;
          console.log("Numero de acertos: " + matches);
+	     document.querySelector('#containerError').innerText = "A quantidade de erros é: " + errorCounter;
 		 document.querySelector('#containerMatch').innerText = "A quantidade de acertos é: " + matches;
 		 document.querySelector('#containerProgress').style.width = matches * 10 + "%";
 		 pp1var.innerText = matches * + 10 + "%";
