@@ -89,7 +89,6 @@
 		 pp1var.innerText = matches * + 10 + "%";
 		 flippedCards = [];
 		 pp1Func();
-		 rpb();
          if(matches === 10){
            console.log("GameOverFunc Foi em, se n foi foi em outro lugar jj pegkmae´lgjm")
            gameOver();
@@ -132,8 +131,5 @@
 	 } else {
 		 pp1var.style.color = "orange";
 	 }
-  }
-  function rpb(){
-		  rpbvar.style.background = "conic-gradient(from" + matches * 10 + "deg, yellow, red)";
   }
 }())
