@@ -6,7 +6,6 @@
   var modalGameOver = document.querySelector("#modalGameOver");
   var errorCounter = 0;
   var pp1var = document.querySelector('#pp1');
-  var rpbvar = document.querySelector('#roundedProgressBar');
   
   
    for(var i = 0; i < 20; i++){
@@ -92,7 +91,6 @@
 		 pp1var.innerText = matches * + 10 + "%";
 		 flippedCards = [];
 		 pp1Func();
-		 rpb();
          if(matches === 10){
            console.log("GameOverFunc Foi em, se n foi foi em outro lugar jj pegkmae´lgjm")
            gameOver();
