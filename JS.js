@@ -107,7 +107,7 @@
                flippedCards[1].childNodes[3].classList.toggle("flipped");
                document.querySelector('#containerError').innerText = "A quantidade de erros é: " + errorCounter;
           flippedCards = [];
-    }, 1000);
+    }, 2500);
 }
 autoFlip();
     } 
